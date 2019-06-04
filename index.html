@@ -19,60 +19,64 @@
 
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-secondary sticky-top">
-        <a class="navbar-brand" href="#"><img src="./cropped-gtms-1 - Copy.png" alt="gtms" style="height:80px"></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+        <div class="wrapper container">
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="https://gtms.us">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Onboarding Steps
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#step-one">Step One</a>
-                        <a class="dropdown-item" href="#step-two">Step Two</a>
-                        <a class="dropdown-item" href="#step-three">Step Three</a>
-                    </div>
-                </li>
-                <li class="nav-item"> 
-                    <a href="FAQs.html" class="nav-link">FAQs</a>
-                </li>
-            </ul>
 
+            <a class="navbar-brand" href="https://www.gtms.us" target='_blank'><img src="./cropped-gtms-1 - Copy.png" alt="gtms" style="height:80px"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="https://www.gtms.us" target='_blank'>Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Onboarding Steps
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#step-one">Step One</a>
+                            <a class="dropdown-item" href="#step-two">Step Two</a>
+                            <a class="dropdown-item" href="#step-three">Step Three</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="FAQs.html" class="nav-link">FAQs</a>
+                    </li>
+                </ul>
+
+            </div>
         </div>
     </nav>
 
 
-    <div class="jumbotron" >
+    <div class="jumbotron">
         <h1 class="display-3 text-center" id='step-one'>Onboarding with GTMS</h1>
-        <h3 class="disply-5 text-center" >Simple steps for onboarding LTL & Parcel</h3>
+        <h3 class="disply-5 text-center">Simple steps for onboarding LTL & Parcel</h3>
     </div>
 
-<!-- Step 1 -->
-    <div class="container" >
+    <!-- Step 1 -->
+    <div class="container">
         <h2 class="display-4">Step 1:</h2>
         <h3 class="display-5">Have a survey for us?</h3>
         <p class="lead mt-4">
             Drop a Survey here and we'll fill it out, and get it back to you a few days.
         </p>
 
-        <div class="myDropzone" id="myDropzone" >
-            <img class="img-thumbnail myDropzone" id="myDropzone2"  src="./icons8-upload-to-cloud-100.png" alt="upload">
-            <h5 class='text-center pt-5' id = 'step-two'>Drop files here, or click the image to upload</h5>
+        <div class="myDropzone" id="myDropzone">
+            <img class="img-thumbnail myDropzone" id="myDropzone2" src="./icons8-upload-to-cloud-100.png" alt="upload">
+            <h5 class='text-center pt-5' id='step-two'>Drop files here, or click the image to upload</h5>
         </div>
 
 
     </div>
 
-<!-- Step 2 -->
-    <div class="container mt-5" >
+    <!-- Step 2 -->
+    <div class="container mt-5">
         <h2 class="display-4">Step 2:</h2>
         <h3 class="display-5">What do we require?</h3>
         <p class="lead mt-4">
@@ -82,54 +86,59 @@
             <div class="col col-sm-12 col-md-6 text-center" target="_blank">
 
                 <a href="./GTMS 210 Mapping Docs 1.pdf" class="link" download>
-                <div class="card">
-                    <img class="card-img-top download-file" src="./icons8-downloads-folder-64.png" alt="download file">
-                    <div class="card-body">
-                        <h5 class="card-title"  id='step-three'>Download GTMS 210 Mapping File</h5>
+                    <div class="card">
+                        <img class="card-img-top download-file" src="./icons8-downloads-folder-64.png"
+                            alt="download file">
+                        <div class="card-body">
+                            <h5 class="card-title" id='step-three'>Download GTMS 210 Mapping File</h5>
+                        </div>
                     </div>
-                </div>
-            </a>
+                </a>
             </div>
             <div class="col col-sm-12 col-md-6">
-                    <p class ='hline'>GTMS requires something special:</p>
+                <p class='hline'>GTMS requires something special:</p>
                 <ul>
                     <li>For 210: N9*CR*XX -> Customer identification number (Given by GTMS), is placed in the XX</li>
-                    <li>For 214: L11*XX*11 -> Customer identification number (Given by GTMS), the same as for the 210, goes in place of the XX</li>
+                    <li>For 214: L11*XX*11 -> Customer identification number (Given by GTMS), the same as for the 210,
+                        goes in place of the XX</li>
                 </ul>
             </div>
         </div>
     </div>
 
-<!-- Step 3 -->
-    <div class="container mt-5 mb-5" >
+    <!-- Step 3 -->
+    <div class="container mt-5 mb-5">
         <h2 class="display-4">Step 3:</h2>
         <h3 class="display-5">Where to Drop off and Pick up EDI?</h3>
         <p class="lead mt-4">
             Our FTP File system is more than simple. Drop your EDI files and you're done!
         </p>
         <div class="row">
-            <div class="col col-sm-12 col-md-6 text-center">    
-                    <img class="img-thumbnail file-structure" src="./File Structure 1.png" alt="thumbnail">
+            <div class="col col-sm-12 col-md-6 text-center">
+                <img class="img-thumbnail file-structure" src="./File Structure 1.png" alt="thumbnail">
             </div>
             <div class="col col-sm-12 col-md-6">
                 <ol>
                     <li class="lead">We'll need to whitelist your IP. Send your IP, and company name to:
                         <ol>
-                            <li><a href="mailto:tyler.ray@gtms.us?Subject=EDI%20IP%20Address%20for%20Whitelist">Tyler.Ray@gtms</a></li>
+                            <li>
+                                <a href="mailto:tyler.ray@gtms.us?Subject=EDI%20IP%20Address%20for%20Whitelist">Tyler.Ray@gtms</a>
+                            </li>
                         </ol>
 
                     </li>
-                    <li class="lead">First choose what type of file you're dropping. 210? or 214? Then drop into the Inbound folder.
-                    <ul>
-                        <li>
-                            Think of this like GTMS's inbox.
-                        </li>
-                    </ul>
-                </li> 
+                    <li class="lead">First choose what type of file you're dropping. 210? or 214? Then drop into the
+                        Inbound folder.
+                        <ul>
+                            <li>
+                                Think of this like GTMS's inbox.
+                            </li>
+                        </ul>
+                    </li>
                     <li class="lead">See your 997 form in the 997 file. Think of this like a receipt.
-                            <ul>
-                                <li>Dropped files will move to Archive for 3 months for reference</li>
-                            </ul>
+                        <ul>
+                            <li>Dropped files will move to Archive for 3 months for reference</li>
+                        </ul>
                     </li>
                 </ol>
             </div>
@@ -141,12 +150,12 @@
 
     <!-- Footer -->
     <div class="jumbotron mb-0 bg-light border">
-        <h3 class="display-5">We would like to thank you for using GTMS. If you have any questions please reach out to:</h3>        
-        
+        <h3 class="display-5">We would like to thank you for using GTMS. If you have any questions please reach out to:
+        </h3>
         <ul class="list-unstyled mt-3">
             <li>855-884-3555</li>
-            <li>Tyler.Ray@gtms.us</li>
-            <li>Mason.Bennett@gtms.us</li>
+            <li><a href="mailto:tyler.ray@gtms.us?Subject=EDI%20IP%20Address%20for%20Whitelist">Tyler.Ray@gtms</a></li>
+            <li><a href="mailto:mason.bennet@gtms.us?Subject=EDI%20IP%20Address%20for%20Whitelist">Mason.Bennet@gtms</a></li>
         </ul>
     </div>
 
