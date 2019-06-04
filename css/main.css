@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+* {
+  font-family: "Montserrat";
+}
+
+.myDropzone {
+  background-color: #bbb7b7;
+  height: auto;
+  text-align: center;
+  padding: 3rem;
+}
+
+.clickHere {
+  text-decoration: underline;
+}
+
+.download-file {
+  margin: auto;
+  height: 150px;
+  width: 150px;
+}
+
+.file-structure {
+  height: 100% !important;
+}
+/*# sourceMappingURL=main.css.map */
