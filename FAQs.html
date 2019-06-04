@@ -10,8 +10,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.5.1/dropzone.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
     <link rel="stylesheet" href="./css/main.css">
 </head>
 
@@ -101,7 +100,7 @@
                             <li>Pickup Date location: <strong>B3*09</strong></li>
                             <li>Drop off Date location: <strong>G62*02</strong>
                                 <ul>
-                                    <li>E.g. <strong>G62*86*<span class='todays_date'>06/04/2019</span> </strong></li>
+                                    <li>E.g. <strong>G62*86*<span class='todays_date'></span> </strong></li>
                                 </ul>
                             </li>
                         </ul>
@@ -121,8 +120,18 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.5.1/dropzone.js'></script>
+
     <script src='./main.js'></script>
+    <script>
+let element = document.querySelector('.todays_date')
+let now = new Date()
+let month = '0'+ now.getMonth()
+let day = now.getDay()
+day = 09
+day = day + ''
+      console.log(day.length, day)
+console.log(day)
+    </script>
 </body>
 
 </html>

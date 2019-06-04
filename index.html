@@ -16,22 +16,19 @@
 </head>
 
 <body>
-
-
     <nav class="navbar navbar-expand-lg navbar-dark bg-secondary sticky-top">
         <div class="wrapper container">
-
-
-            <a class="navbar-brand" href="https://www.gtms.us" target='_blank'><img src="./cropped-gtms-1 - Copy.png" alt="gtms" style="height:80px"></a>
+            <a class="navbar-brand" href="https://www.gtms.us" target='_blank'><img src="./cropped-gtms-1 - Copy.png"
+                    alt="gtms" style="height:80px"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="https://www.gtms.us" target='_blank'>Home <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="https://www.gtms.us" target='_blank'>Home <span
+                                class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
@@ -59,6 +56,8 @@
         <h3 class="disply-5 text-center">Simple steps for onboarding LTL & Parcel</h3>
     </div>
 
+
+
     <!-- Step 1 -->
     <div class="container">
         <h2 class="display-4">Step 1:</h2>
@@ -66,14 +65,13 @@
         <p class="lead mt-4">
             Drop a Survey here and we'll fill it out, and get it back to you a few days.
         </p>
-
         <div class="myDropzone" id="myDropzone">
             <img class="img-thumbnail myDropzone" id="myDropzone2" src="./icons8-upload-to-cloud-100.png" alt="upload">
             <h5 class='text-center pt-5' id='step-two'>Drop files here, or click the image to upload</h5>
         </div>
-
-
     </div>
+
+
 
     <!-- Step 2 -->
     <div class="container mt-5">
@@ -106,6 +104,9 @@
         </div>
     </div>
 
+
+
+
     <!-- Step 3 -->
     <div class="container mt-5 mb-5">
         <h2 class="display-4">Step 3:</h2>
@@ -122,10 +123,10 @@
                     <li class="lead">We'll need to whitelist your IP. Send your IP, and company name to:
                         <ol>
                             <li>
-                                <a href="mailto:tyler.ray@gtms.us?Subject=EDI%20IP%20Address%20for%20Whitelist">Tyler.Ray@gtms</a>
+                                <a
+                                    href="mailto:tyler.ray@gtms.us?Subject=EDI%20IP%20Address%20for%20Whitelist">Tyler.Ray@gtms</a>
                             </li>
                         </ol>
-
                     </li>
                     <li class="lead">First choose what type of file you're dropping. 210? or 214? Then drop into the
                         Inbound folder.
@@ -137,12 +138,11 @@
                     </li>
                     <li class="lead">See your 997 form in the 997 file. Think of this like a receipt.
                         <ul>
-                            <li>Dropped files will move to Archive for 3 months for reference</li>
+                            <li>Dropped files will move to Archive for the past 3 months for reference</li>
                         </ul>
                     </li>
                 </ol>
             </div>
-
         </div>
     </div>
 
@@ -150,13 +150,20 @@
 
     <!-- Footer -->
     <div class="jumbotron mb-0 bg-light border">
-        <h3 class="display-5">We would like to thank you for using GTMS. If you have any questions please reach out to:
-        </h3>
-        <ul class="list-unstyled mt-3">
-            <li>855-884-3555</li>
-            <li><a href="mailto:tyler.ray@gtms.us?Subject=EDI%20IP%20Address%20for%20Whitelist">Tyler.Ray@gtms</a></li>
-            <li><a href="mailto:mason.bennet@gtms.us?Subject=EDI%20IP%20Address%20for%20Whitelist">Mason.Bennet@gtms</a></li>
-        </ul>
+        <div class="container">
+
+            <h3 class="display-5">We would like to thank you for using GTMS. If you have any questions please reach out
+                to:
+            </h3>
+            <ul class="list-unstyled mt-3">
+                <li>855-884-3555</li>
+                <li><a href="mailto:tyler.ray@gtms.us?Subject=EDI%20IP%20Address%20for%20Whitelist">Tyler.Ray@gtms</a>
+                </li>
+                <li><a
+                        href="mailto:mason.bennet@gtms.us?Subject=EDI%20IP%20Address%20for%20Whitelist">Mason.Bennet@gtms</a>
+                </li>
+            </ul>
+        </div>
     </div>
 
 
@@ -178,8 +185,18 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.5.1/dropzone.js'></script>
+
     <script src='./main.js'></script>
+    <script>
+    $(document).ready(()=>{
+    $($("div#myDropzone").dropzone({ url: "/file/post" }))
+    $($("img#myDropzone2").dropzone({ url: "/file/post" }))
+
+
+
+
+})
+</script>
 </body>
 
 </html>
