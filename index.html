@@ -18,7 +18,6 @@
 <body>
 
 
-    <!-- <div class="container"> -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-secondary sticky-top">
         <a class="navbar-brand" href="#"><img src="./cropped-gtms-1 - Copy.png" alt="gtms" style="height:80px"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -29,7 +28,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="gtms.us">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="https://gtms.us">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
@@ -45,9 +44,6 @@
                 <li class="nav-item"> 
                     <a href="FAQs.html" class="nav-link">FAQs</a>
                 </li>
-                <!-- <li class="nav-item">
-                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                </li> -->
             </ul>
 
         </div>
@@ -56,10 +52,10 @@
 
     <div class="jumbotron" >
         <h1 class="display-3 text-center" id='step-one'>Onboarding with GTMS</h1>
-        <h3 class="disply-5 text-center" >Simple steps</h3>
+        <h3 class="disply-5 text-center" >Simple steps for onboarding LTL & Parcel</h3>
     </div>
 
-
+<!-- Step 1 -->
     <div class="container" >
         <h2 class="display-4">Step 1:</h2>
         <h3 class="display-5">Have a survey for us?</h3>
@@ -75,7 +71,7 @@
 
     </div>
 
-
+<!-- Step 2 -->
     <div class="container mt-5" >
         <h2 class="display-4">Step 2:</h2>
         <h3 class="display-5">What do we require?</h3>
@@ -90,28 +86,21 @@
                     <img class="card-img-top download-file" src="./icons8-downloads-folder-64.png" alt="download file">
                     <div class="card-body">
                         <h5 class="card-title"  id='step-three'>Download GTMS 210 Mapping File</h5>
-                        <!-- <p class="card-text">Content</p> -->
                     </div>
-                    <!-- <img class="card-img-bottom" src="" alt=""> -->
                 </div>
-                
             </a>
-                    <!-- <img src="./icons8-downloads-folder-64.png" alt="Download file"/> -->
-                    <!-- <p>download file</p> -->
             </div>
             <div class="col col-sm-12 col-md-6">
                     <p class ='hline'>GTMS requires something special:</p>
                 <ul>
-                    <li>N9*CR -> Customer identification number (Given by GTMS)</li>
+                    <li>For 210: N9*CR*XX -> Customer identification number (Given by GTMS), is placed in the XX</li>
+                    <li>For 214: L11*XX*11 -> Customer identification number (Given by GTMS), the same as for the 210, goes in place of the XX</li>
                 </ul>
             </div>
-            <!-- <div class="col col-md-4">
-                <div class="display-4" id = 'step-three'>A third element</div>
-            </div> -->
         </div>
     </div>
 
-
+<!-- Step 3 -->
     <div class="container mt-5 mb-5" >
         <h2 class="display-4">Step 3:</h2>
         <h3 class="display-5">Where to Drop off and Pick up EDI?</h3>
@@ -124,8 +113,19 @@
             </div>
             <div class="col col-sm-12 col-md-6">
                 <ol>
-                    <li class="lead">First choose what type of file you're dropping. 210? or 214?</li>
-                    <li class="lead">Then drop into the Inbound folder. Think of this like GTMS's inbox.</li>
+                    <li class="lead">We'll need to whitelist your IP. Send your IP, and company name to:
+                        <ol>
+                            <li><a href="mailto:tyler.ray@gtms.us?Subject=EDI%20IP%20Address%20for%20Whitelist">Tyler.Ray@gtms</a></li>
+                        </ol>
+
+                    </li>
+                    <li class="lead">First choose what type of file you're dropping. 210? or 214? Then drop into the Inbound folder.
+                    <ul>
+                        <li>
+                            Think of this like GTMS's inbox.
+                        </li>
+                    </ul>
+                </li> 
                     <li class="lead">See your 997 form in the 997 file. Think of this like a receipt.
                             <ul>
                                 <li>Dropped files will move to Archive for 3 months for reference</li>
@@ -136,13 +136,17 @@
 
         </div>
     </div>
+
+
+
+    <!-- Footer -->
     <div class="jumbotron mb-0 bg-light border">
         <h3 class="display-5">We would like to thank you for using GTMS. If you have any questions please reach out to:</h3>        
         
         <ul class="list-unstyled mt-3">
             <li>855-884-3555</li>
-            <li>Mason.bennett@gtms.us</li>
-            <li>Tyler.ray@gtms.us</li>
+            <li>Tyler.Ray@gtms.us</li>
+            <li>Mason.Bennett@gtms.us</li>
         </ul>
     </div>
 
