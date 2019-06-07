@@ -18,28 +18,30 @@
 
 
     <!-- <div class="container"> -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-secondary sticky-top ">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top ">
         <div class="wrapper container">
-
-            <a class="navbar-brand" href="https://www.gtms.us" target='_blank'><img src="./cropped-gtms-1 - Copy.png" alt="gtms" style="height:80px"></a>
+            <a class="navbar-brand" href="https://www.gtms.us" target='_blank'><img src="./images/cropped-gtms-1 - Copy.png"
+                    alt="gtms" style="height:80px"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="https://www.gtms.us" target='_blank'>Home <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="https://www.gtms.us" target='_blank'>Home <span
+                                class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
                         <a href="index.html" class="nav-link">Back to Steps</a>
                     </li>
                 </ul>
-
             </div>
         </div>
     </nav>
+ 
+
+
     <div class="container questions">
         <div class="accordion" id="accordionExample">
             <div class="card">
@@ -67,6 +69,8 @@
                     </div>
                 </div>
             </div>
+
+
             <div class="card">
                 <div class="card-header" id="headingTwo">
                     <h2 class="mb-0">
@@ -84,6 +88,8 @@
                     </div>
                 </div>
             </div>
+
+
             <div class="card">
                 <div class="card-header" id="headingThree">
                     <h2 class="mb-0">
@@ -107,6 +113,47 @@
                     </div>
                 </div>
             </div>
+
+
+            <div class="card">
+                <div class="card-header" id="headingFour">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                            data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            Q4: How do I know my files have been received by GTMS? Whats a 997?
+                        </button>
+                    </h2>
+                </div>
+                <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+                    <div class="card-body">
+                        In production, Files will automatically receive an 997 upon receipt and completion.
+                        <br/>
+                        <br/>
+                       997 files are like receipts. 997 will show that GTMS has received the files, and that they have begun their process of going thorugh GTMS's systems.
+                       <br>
+                       <br>
+                       These will be available in the same FTP that is used to drop files to GTMS in the folder named "997"
+
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="card">
+                <div class="card-header" id="headingFive">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                            data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                            Q5: Does GTMS have an EDI Mapping Document?
+                        </button>
+                    </h2>
+                </div>
+                <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+                    <div class="card-body">
+                        It does!  <a href="./GTMS 210 Mapping Docs 1.pdf" download>Click here</a> to download GTMS's general mapping document. Contact <a href="mailto:tyler.ray@gtms.us?Subject=Request%20EDI%20210%20customization">Tyler Ray</a> to request a custom change in mapping or for any questions.
+                    </div>
+                </div>
+            </div>
         </div>
 
     </div>
@@ -123,14 +170,14 @@
 
     <script src='./main.js'></script>
     <script>
-let element = document.querySelector('.todays_date')
-let now = new Date()
-let month = '0'+ now.getMonth()
-let day = now.getDay()
-day = 09
-day = day + ''
-      console.log(day.length, day)
-console.log(day)
+        let element = document.querySelector('.todays_date')
+        let now = new Date()
+        let month = '0' + now.getMonth()
+        let day = now.getDay()
+        day = 09
+        day = day + ''
+        console.log(day.length, day)
+        console.log(day)
     </script>
 </body>
 

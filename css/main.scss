@@ -30,3 +30,24 @@
 .file-structure{
     height:100% !important;
 }
+
+
+.mainThing{
+    min-height: 500px;
+    background-image: url('../images/flight-sky-clouds-fly.jpg');
+    background-size: cover;
+    background-position: center
+}
+.myContainer{
+    background-image: url('../images/writing.jpeg');
+    background-size: cover;
+    background-position: center;
+}
+
+.bottom-border{
+    border-bottom: 4px solid #e98533
+}
+.max-400{
+    width:50%;
+    height:auto;
+}

@@ -11,15 +11,16 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.5.1/dropzone.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.5.1/dropzone.css"
+        crossorigin="anonymous">
     <link rel="stylesheet" href="./css/main.css">
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-secondary sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top myNav">
         <div class="wrapper container">
-            <a class="navbar-brand" href="https://www.gtms.us" target='_blank'><img src="./cropped-gtms-1 - Copy.png"
-                    alt="gtms" style="height:80px"></a>
+            <a class="navbar-brand" href="https://www.gtms.us" target='_blank'><img
+                    src="./images/cropped-gtms-1 - Copy - Copy.png" alt="gtms" style="height:80px"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -51,23 +52,35 @@
     </nav>
 
 
-    <div class="jumbotron">
+    <div class="jumbotron mainThing bottom-border">
         <h1 class="display-3 text-center" id='step-one'>Onboarding with GTMS</h1>
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
         <h3 class="disply-5 text-center">Simple steps for onboarding LTL & Parcel</h3>
     </div>
 
 
 
     <!-- Step 1 -->
-    <div class="container">
+    <div class="container ">
         <h2 class="display-4">Step 1:</h2>
         <h3 class="display-5">Have a survey for us?</h3>
         <p class="lead mt-4">
             Drop a Survey here and we'll fill it out, and get it back to you a few days.
         </p>
-        <div class="myDropzone" id="myDropzone">
-            <img class="img-thumbnail myDropzone" id="myDropzone2" src="./icons8-upload-to-cloud-100.png" alt="upload">
-            <h5 class='text-center pt-5' id='step-two'>Drop files here, or click the image to upload</h5>
+        <div class="myDropzone myContainer" id="myDropzone">
+            <img class="img-thumbnail myDropzone" id="myDropzone2" src="./images/icons8-upload-to-cloud-100.png"
+                alt="upload">
+            <h5 class='text-center mt-5 bg-light' id='step-two'>Drop files here, or click the image to upload</h5>
         </div>
     </div>
 
@@ -85,7 +98,7 @@
 
                 <a href="./GTMS 210 Mapping Docs 1.pdf" class="link" download>
                     <div class="card">
-                        <img class="card-img-top download-file" src="./icons8-downloads-folder-64.png"
+                        <img class="card-img-top download-file" src="./images/icons8-downloads-folder-64.png"
                             alt="download file">
                         <div class="card-body">
                             <h5 class="card-title" id='step-three'>Download GTMS 210 Mapping File</h5>
@@ -102,9 +115,18 @@
                 </ul>
             </div>
         </div>
+
+
+        <div class="d-flex justify-content-center pt-5">
+            <div class="card max-400">
+                <img class="card-img" src="./images/video-placeholder-1280x720-40.jpg" alt="">
+                <div class="card-img-overlay">
+                    <h5 class="card-title">Watch an Example</h5>
+                    <p class="card-text">Youtube  </p>
+                </div>
+            </div>
+        </div>
     </div>
-
-
 
 
     <!-- Step 3 -->
@@ -116,7 +138,7 @@
         </p>
         <div class="row">
             <div class="col col-12 col-lg-6 text-center">
-                <img class="img-thumbnail file-structure" src="./File Structure 1.png" alt="thumbnail">
+                <img class="img-thumbnail file-structure" src="./images/File Structure 1.png" alt="thumbnail">
             </div>
             <div class="col col-12 col-lg-6">
                 <ol>
@@ -144,6 +166,16 @@
                 </ol>
             </div>
         </div>
+     
+        <div class="d-flex justify-content-center pt-5">
+                <div class="card max-400">
+                    <img class="card-img" src="./images/video-placeholder-1280x720-40.jpg" alt="">
+                    <div class="card-img-overlay">
+                        <h5 class="card-title">Watch an Example!</h5>
+                        <p class="card-text">Youtube</p>
+                    </div>
+                </div>
+            </div>
     </div>
 
 
@@ -180,16 +212,16 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.5.1/dropzone.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.5.1/dropzone.js'></script>
     <script src='./main.js'></script>
     <script>
-    $(document).ready(()=>{
-    $($("div#myDropzone").dropzone({ url: "/file/post" }))
-    $($("img#myDropzone2").dropzone({ url: "/file/post" }))
+        $(document).ready(() => {
+            $($("div#myDropzone").dropzone({ url: "/file/post" }))
+            $($("img#myDropzone2").dropzone({ url: "/file/post" }))
 
 
-})
-</script>
+        })
+    </script>
 </body>
 
 </html>
