@@ -50,4 +50,24 @@
   width: 50%;
   height: auto;
 }
+
+.client-onboard {
+  background-image: url("../images/customer.jpeg");
+  background-size: cover;
+  min-height: 400px;
+  background-position: center;
+}
+
+.myHeader {
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.myHeader2 {
+  background: rgba(255, 255, 255, 0.4);
+}
+
+.fa {
+  color: red;
+  height: 100px;
+}
 /*# sourceMappingURL=main.css.map */
